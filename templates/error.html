@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Masterblog</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+    <header>
+        <h1>Masterblog</h1>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="{{url_for('index')}}">Home</a></li>
+    </ul>
+    </nav>
+    <main>
+        <div class="blog_posts_div">
+            <h2> Something went wrong! :( </h2>
+            <h3> {{error_msg}} </h3>
+            <p> Let's go back <a href="{{url_for('index')}}">Home</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blog Master. Masterschool's assignment</p>
+    </footer>
+</body>
+</html>
