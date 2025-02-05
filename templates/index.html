@@ -8,32 +8,37 @@
     <!--<link rel="stylesheet" href="styles.css">-->
 </head>
 <body>
-    <header>
-        <h1>Masterblog</h1>
-    </header>
-    <nav>
-    <ul>
-        <li><a href="{{url_for('add')}}">Add a blog post</a></li>
-    </ul>
-    </nav>
-    <main>
-        <div class="blog_posts_div">
-            <ul>
-                {% for post in posts %}
-                    <li>
-                        <h2>{{post["title"]}}</h2>
-                        <p>Author: {{post["author"]}}</p>
-                        <p>{{post["content"]}}</p>
-                        <button type="button" onclick="window.location.href='{{url_for('delete', post_id=post['id'])}}'">Delete post</button>
-                        <button type="button" onclick="window.location.href='{{url_for('update', post_id=post['id'])}}'">Update post</button>
-                        <input type="button" onclick="window.location.href='{{url_for('like', post_id=post['id'])}}'" value="Likes {{post['likes']}}"/>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Blog Master. Masterschool's assignment</p>
-    </footer>
+<header>
+    <h1>Masterblog</h1>
+</header>
+<nav>
+
+</nav>
+<main>
+    <div class="blog_posts_div">
+        <input type="button" onclick="window.location.href='{{url_for('add')}}'"
+                       value="Add a blog post"/>
+        <ul>
+            {% for post in posts %}
+            <li>
+                <h2>{{post["title"]}}</h2>
+                <p>Author: {{post["author"]}}</p>
+                <p>{{post["content"]}}</p>
+                <button type="button" onclick="window.location.href='{{url_for('delete', post_id=post['id'])}}'">Delete
+                    post
+                </button>
+                <button type="button" onclick="window.location.href='{{url_for('update', post_id=post['id'])}}'">Update
+                    post
+                </button>
+                <input type="button" onclick="window.location.href='{{url_for('like', post_id=post['id'])}}'"
+                       value="Likes {{post['likes']}}"/>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2025 Blog Master. Masterschool's assignment</p>
+</footer>
 </body>
 </html>

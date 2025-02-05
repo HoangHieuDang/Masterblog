@@ -1,1 +1,23 @@
-[{"id": 1, "author": "John Travolta", "title": "First Post", "content": "This is how we do it!", "likes": 12}, {"id": 2, "author": "Jane Doe", "title": "Second Post", "content": "It is time to clean the apartment", "likes": 9}, {"id": 3, "author": "Hieu Dang", "title": "Third Post", "content": "Not like us won the grammy man, wild", "likes": 11}]
+[
+    {
+        "id": 1,
+        "author": "John Travolta",
+        "title": "First Post",
+        "content": "This is how we do it!",
+        "likes": 12
+    },
+    {
+        "id": 2,
+        "author": "Jane Doe",
+        "title": "Second Post",
+        "content": "This is how we do it!",
+        "likes": 9
+    },
+    {
+        "id": 3,
+        "author": "Hieu Dang",
+        "title": "Third Post",
+        "content": "Not like us won the grammy man, wild",
+        "likes": 11
+    }
+]
